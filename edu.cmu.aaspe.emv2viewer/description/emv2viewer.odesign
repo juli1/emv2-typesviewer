@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="emv2viewer" version="10.1.3.201511131800">
+  <ownedViewpoints name="EMV2Viewer">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="EMV2Diagram" domainClass="errorModel.ErrorModelLibrary" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="ErrorType" label="ErrorType" domainClass="errorModel.ErrorType">
+          <style xsi:type="style:EllipseNodeDescription" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="15" verticalDiameterComputationExpression="4">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='chocolate']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="SuperType" sourceMapping="//@ownedViewpoints[name='EMV2Viewer']/@ownedRepresentations[name='EMV2Diagram']/@defaultLayer/@nodeMappings[name='ErrorType']" targetMapping="//@ownedViewpoints[name='EMV2Viewer']/@ownedRepresentations[name='EMV2Diagram']/@defaultLayer/@nodeMappings[name='ErrorType']" targetFinderExpression="feature:superType">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>
